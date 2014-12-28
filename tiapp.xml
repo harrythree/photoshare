@@ -15,6 +15,12 @@
     <analytics>true</analytics>
     <guid>1a57d0b7-bebf-4825-ae0b-534f5bb960d3</guid>
     <property name="ti.ui.defaultunit" type="string">dp</property>
+    <property name="acs-oauth-secret-production" type="string">cmEQcYJpcXWRS43cA8AnPz8GBOJvWqLc</property>
+    <property name="acs-oauth-key-production" type="string">m2zCfLlwC8bK4U3q0OlV4zIBcobJMn3Z</property>
+    <property name="acs-api-key-production" type="string">Hlp0uOyVvf21ETaxj9g0mO8YlXJQajzO</property>
+    <property name="acs-oauth-secret-development" type="string">N6Ym8F7KV6Oh4UOnWiqfjeIVHxex8ZTq</property>
+    <property name="acs-oauth-key-development" type="string">hYakblaAUj0M3tqERTgImo7TOrth0XcR</property>
+    <property name="acs-api-key-development" type="string">f8gmuoQzjzq0U9LPEpTIIbgLeEu3qkyL</property>
     <ios>
         <plist>
             <dict>
