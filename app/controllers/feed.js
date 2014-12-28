@@ -103,3 +103,27 @@ function processImage(_mediaObject, _callback) {
 		}
 	});
 }
+
+$.feedTable.addEventListener('click', processTableClicks);
+
+function processTableClicks(_event) {
+	if(_event.source.id === 'commentButton') {
+		handleCommentButtonClicked(_event);
+	} else if(_event.source.id === 'shareButton') {
+		alert('will do this later');
+	}
+}
+
+function handleCommentButtonClicked(_event) {
+	var collection = Alloy.Collections.instance('Photo');
+	var model = collection.get(_event.row.row_id);
+
+	var controller = Alloy.createController('comment', {
+		photo: model,
+		parentController: $
+	});
+
+	controller.initialize();
+
+	Alloy.Globals.openCurrentTabWindow(controller.getView());
+}

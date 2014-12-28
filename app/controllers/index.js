@@ -39,3 +39,7 @@ function doOpen() {
 		});
 	}
 }
+
+Alloy.Globals.openCurrentTabWindow = function(_window) {
+	$.tabGroup.activeTab.open(_window);
+};
